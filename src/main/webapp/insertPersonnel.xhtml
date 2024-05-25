@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: negin
+  Date: 5/20/24
+  Time: 1:48 PM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"  >
+
+<h:head>
+
+</h:head>
+<h:body>
+    <div class="card">
+        <h5>Enter national code</h5>
+        <p:inputText value="#{PersonnelManagedBean.nationalCode}"/>
+
+        <h5>Enter first name</h5>
+        <p:inputText value="#{PersonnelManagedBean.firstName}"/>
+
+        <h5>Enter last name</h5>
+        <p:inputText value="#{PersonnelManagedBean.lastName}"/>
+
+        <h5>Enter city name</h5>
+        <p:inputText value="#{PersonnelManagedBean.cityName}"/>
+
+        <h:commandButton actionListener="#{PersonnelManagedBean.doInsert}" value="Insert" />
+
+        <h5>Result</h5>
+        <h:outputLabel value="personnel added"/>
+    </div>
+</h:body>
+</html>

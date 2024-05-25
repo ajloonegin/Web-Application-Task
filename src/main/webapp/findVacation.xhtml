@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: negin
+  Date: 5/20/24
+  Time: 1:47 PM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>insertVacation</title>
+</h:head>
+
+<h:body>
+    <div class="card">
+        <h5>insert national code of personnel:</h5>
+        <p:inputText value="#{VacationManagedBean.nationalCode}"/>
+
+        <h5>enter date of vacation with yyyy-MM-dd format</h5>
+        <p:inputText value="#{VacationManagedBean.date}"/>
+
+        <h:commandButton actionListener="#{VacationManagedBean.doFind}" value="Find" />
+
+        <h5>Result</h5>
+        <h:outputLabel value="#{VacationManagedBean.vf}"/>
+    </div>
+</h:body>
+
+</html>

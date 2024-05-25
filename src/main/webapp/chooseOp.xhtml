@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: negin
+  Date: 5/20/24
+  Time: 1:45 PM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"  >
+
+
+<h:head>
+    <title>Application</title>
+</h:head>
+
+<h:body>
+    <div class="card">
+        <h5>Choose Operation:</h5>
+        <p:linkButton outcome="insertPersonnel" value="1: Insert personnel" style="margin-right:20px;">
+            <f:param name="productId" value="10"/>
+        </p:linkButton>
+
+        <p:linkButton outcome="findPersonnel" value="2: Find personnel" style="margin-right:20px;">
+            <f:param name="productId" value="10"/>
+        </p:linkButton>
+
+        <p:linkButton outcome="insertVacation" value="3: Insert vacation of personnel" style="margin-right:20px;">
+            <f:param name="productId" value="20"/>
+        </p:linkButton>
+
+        <p:linkButton outcome="findVacation" value="4: Find vacation of personnel" style="margin-right:20px;">
+            <f:param name="productId" value="30"/>
+        </p:linkButton>
+
+        <p:linkButton outcome="updatePersonnel" value="5: Update personnel" style="margin-right:20px;">
+            <f:param name="productId" value="40"/>
+        </p:linkButton>
+
+        <p:linkButton outcome="updateVacation" value="6: Update vacation of personnel" style="margin-right:20px;">
+            <f:param name="productId" value="50"/>
+        </p:linkButton>
+
+        <p:linkButton outcome="deletePersonnel" value="7: Delete Personnel" style="margin-right:20px;" >
+            <f:param name="productId" value="60"/>
+        </p:linkButton>
+
+        <p:linkButton outcome="deleteVacation" value="8 :delete vacation of personnel" style="margin-right:20px;">
+            <f:param name="productId" value="10"/>
+        </p:linkButton>
+
+        <p:linkButton outcome="productDetail" value="9: Exit" style="margin-right:20px;">
+            <f:param name="productId" value="10"/>
+        </p:linkButton>
+    </div>
+</h:body>
+
+</html>

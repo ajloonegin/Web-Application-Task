@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<h:body>
+    <div class="card">
+        <h5>Enter id number of personnel</h5>
+        <p:inputText value="#{PersonnelManagedBean.id}"/>
+
+        <h5>Enter new firstName</h5>
+        <p:inputText value="#{PersonnelManagedBean.firstName}"/>
+
+        <h5>Enter new lastName</h5>
+        <p:inputText value="#{PersonnelManagedBean.lastName}"/>
+
+        <h5>Enter new cityName</h5>
+        <p:inputText value="#{PersonnelManagedBean.cityName}"/>
+
+        <h:commandButton actionListener="#{PersonnelManagedBean.doUpdate}" value="Update" />
+
+        <h5>Result</h5>
+        <h:outputLabel value="personnel updated"/>
+    </div>
+</h:body>
+
+</html>
